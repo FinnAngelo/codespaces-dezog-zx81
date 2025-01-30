@@ -17,13 +17,20 @@ Prerequisites - none!
 1. Open this template as a github codespace
 2. Wait for the codespace to build - its installing sjasmplus as a postCreateCommand
 
+Yeah, the codespace opens before its finished installing, so it will take a 
+minute or so before you can build...
+
 ## Build, run and debug
 
 1. build with menu > terminal > Run build task... (or just Ctrl+Shift+B)
 2. Goto the run & debug tab > hit `Run and Debug` > `zx81-program`!
    - the `ZX81 SAMPLE PROGRAM` starts in the Z80 simulator
    - click on this, press `s`
-   - Chuck a breakpoint into `main.asm` inside its loop - the breakpoint is hit and registers and stuff are shown
+   - Chuck a breakpoint into `main.asm` inside its loop - the breakpoint is hit 
+     and registers and stuff are shown
+
+note: I deleted the `zx81-program.p` and `zx81-program.sld` - now you can see it 
+has done the build 😊
 
 ## Unit testing
 
