@@ -1,5 +1,5 @@
 # Introduction
-This is a small ZX81 assembler program to illustrate the debugging with [DeZog](https://github.com/maziac/DeZog).
+This is a small ZX81 assembler program to illustrate the debugging with [DeZog](https://github.com/maziac/DeZog) - in a codespace!
 The program consists of a BASIC loader (wrapper.asm) and and assembler program (main.asm).
 The main.asm is wrapped into a REM statement at line 1 of the ZX BASIC program.
 
@@ -8,6 +8,26 @@ The BASIC program waits for the user to press "S" then it will start the machine
 The machine code program (main.asm) will just put characters on the screen:
 ![](documentation/images/screen_with_characters.jpg)
 
+# TLDR
+
+Prerequisites - none!
+
+## Setup environment
+
+1. Open this template as a github codespace
+2. Wait for the codespace to build - its installing sjasmplus as a postCreateCommand
+
+## Build, run and debug
+
+1. build with menu > terminal > Run build task... (or just Ctrl+Shift+B)
+2. Goto the run & debug tab > hit `Run and Debug` > `zx81-program`!
+   - the `ZX81 SAMPLE PROGRAM` starts in the Z80 simulator
+   - click on this, press `s`
+   - Chuck a breakpoint into `main.asm` inside its loop - the breakpoint is hit and registers and stuff are shown
+
+## Unit testing
+
+TBD
 
 # Prerequisites
 
